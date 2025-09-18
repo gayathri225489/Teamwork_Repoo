@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book My Show</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #ff3b3f;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #222;
+    }
+    .shows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 30px;
+    }
+    .show-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .show-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .show-image img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+    }
+    .show-details {
+      padding: 15px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .show-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .show-info {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .book-btn {
+      background-color: #ff3b3f;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+      text-decoration: none;
+    }
+    .book-btn:hover {
+      background-color: #e02b2f;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BookMyShow</div>
+    <nav>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Now Showing</h1>
+
+    <div class="shows-grid">
+
+      <div class="show-card">
+        <div class="show-image">
+          <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=600&q=80" alt="Show 1" />
+        </div>
+        <div class="show-details">
+          <div class="show-title">The Grand Musical</div>
+          <div class="show-info">Location: Opera House</div>
+          <a href="#book" class="book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="show-card">
+        <div class="show-image">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Show 2" />
+        </div>
+        <div class="show-details">
+          <div class="show-title">Comedy Nights</div>
+          <div class="show-info">Location: Downtown Theater</div>
+          <a href="#book" class="book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="show-card">
+        <div class="show-image">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Show 3" />
+        </div>
+        <div class="show-details">
+          <div class="show-title">Shakespeare in the Park</div>
+          <div class="show-info">Location: Central Park</div>
+          <a href="#book" class="book-btn">Book Now</a>
+        </div>
+      </div>
+
+      <div class="show-card">
+        <div class="show-image">
+          <img src="https://images.unsplash.com/photo-1531058020387-c292a594b48d?auto=format&fit=crop&w=600&q=80" alt="Show 4" />
+        </div>
+        <div class="show-details">
+          <div class="show-title">Jazz Evening</div>
+          <div class="show-info">Location: Blue Note Club</div>
+          <a href="#book" class="book-btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
