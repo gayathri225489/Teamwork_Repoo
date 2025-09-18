@@ -1,0 +1,7 @@
+This is a BookMyShow-inspired web application built using HTML, CSS, and JavaScript.It provides a modern and responsive interface for browsing and booking shows.
+🔹 Features included:
+  Responsive Navbar – Home, Shows, About, Login, Register.
+  Show Listings – Movies, concerts, and stand-up comedy cards with images, titles, and booking buttons.
+  Attractive UI – Clean layout with hover effects and gradient buttons.
+  Search Functionality – Allows users to quickly search shows by name.
+  Booking Simulation – "Book Now" buttons to simulate the ticket booking process.
